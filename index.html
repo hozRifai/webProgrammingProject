@@ -5,39 +5,48 @@
     <title>UOS | College of Science</title>
 
     <meta charset="utf-8" />
-    <meta name="desciption" content="this is the main page of college of science" />
+    <meta name="desciption" content="this is the our main page, college of science" />
     <meta name="keywords" content="university of sharjah,college of science, computer science department in uos, mathematics department in uos,applied physics and astronomy department  in uos, applied biology  department in uos,chemistry department in uos  " />
     <meta name="author" content="404 team" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 
     <!-- we hate IE9 <3 -->
+    <!-- btw the following lines arent comments! they do work! -->
     <!--[if lt IE 9]>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 			<script src="js/https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js.js"></script>
 	<![endif]-->
 
+    <!-- Lol They dont have  an icon in the official website ! shame!-->
     <link rel="icon" type="image/png" href="static/images/logo.png" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita" /> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- make sure that the bootstrap css file is the first one so it wont override your own codes !-->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
 
-
+    <!-- using font awsome's icons. check the official webstie !-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- will use it in the future <3 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
 </head>
 
 <body>
     <!-- start navbar -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-success box-shadow">
+        <!-- if you dont understand this please read the documentation!-->
+        <!-- here you go https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-success ">
             <a class="navbar-brand" href="#">
                 <span>UOS</span> College Of Science </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#houzayfa" aria-controls="houzayfa"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse " id="houzayfa">
+
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
@@ -45,283 +54,360 @@
                     <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
                 </ul>
             </div>
+
         </nav>
     </header>
     <!-- end navbar -->
 
     <!-- background picture -->
-    <div class="header-picture"></div>
+    <section class="header-picture"></section>
     <!-- end background -->
 
 
 
-    <!-- Start Department Section-->
+    <!-- Start Dean Section-->
 
-    <!-- End Department Section -->
-
-    <div class="features-row section-bg">
+    <section class="dean">
         <div class="container">
             <div class="row">
-                <div class="col-12 features-holding-bottom">
-                    <img class="advanced-feature-img-right" src="static/images/dean.jpg" alt="dean" class="img-thumbnail">
-                    <h2>Dean's Welcome</h2>
-                    <p>The College of Sciences offers undergraduate and graduate programs in major basic sciences:
-                        Computer Science, Applied Physics, Chemistry, Mathematics, and Applied Biological Sciences, all
-                        of which are accredited by the Ministry of Education and internationally recognized. Our
-                        programs aim at preparing students for careers in these disciplines as well as careers in
-                        relation.</p>
+
+
+                <div class="float-left col-xs-12 col-md-6">
+                    <div class="wrapper">
+                        <h2>Dean's Welcome</h2>
+                        <p>The College of Sciences offers
+                            undergraduate and graduate programs in major
+                            basic sciences:
+                            Computer Science, Applied Physics, Chemistry, Mathematics, and Applied Biological Sciences,
+                            all
+                            of which are accredited by the Ministry of Education and internationally recognized. Our
+                            programs aim at preparing students for careers in these disciplines as well as careers in
+                            relation.</p>
+                    </div>
+                </div>
+                <div class="float-right col-xs-12 col-md-6">
+                    <img style="margin-top:50px;" src="static/images/dean.jpg" class="img-fluid" alt="Dean's Welcome">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Dean Section -->
+
+    <!-- Start Department -->
+
+    <section id="speakers">
+        <div class="container">
+
+            <h2 class="text-center">Departments</h2>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="speaker">
+                        <img src="static/images/departments/bio/bio.JPG" alt="Applied Biology" class="img-fluid">
+                        <div class="details">
+                            <h3><a href="">Applied Biology</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="speaker">
+                        <img src="static/images/departments/chemistry/chemistry.JPG" alt="Chemistry" class="img-fluid">
+                        <div class="details">
+                            <h3><a href="#">Chemistry</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="speaker">
+                        <img src="static/images/departments/cs/cs.JPG" alt="Computer Science" class="img-fluid">
+                        <div class="details">
+                            <h3><a href="cs.html">Computer Science</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="speaker">
+                        <img src="static/images/departments/mathematics/mathematics.JPG" alt="Mathematics" class="img-fluid">
+                        <div class="details">
+                            <h3><a href="#">Mathematics</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="speaker">
+                        <img src="static/images/departments/physics/physics.JPG" alt="Applied Physics And Astronomy"
+                            class="img-fluid">
+                        <div class="details">
+                            <h3><a href="#">Applied Physics And Astronomy</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End Department -->
+
+    <!-- start Events -->
+
+    <section id="events">
+        <div class="container">
+
+            <h2 class="text-center">Events & Activities </h2>
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6">
+                    <!-- no href yet!-->
+                    <a class="events-box" href="#">
+                        <img class="img-fluid" src="static/images/departments/bio/events/AccreditationWorkshopJPG.jpg"
+                            alt="accreditation workshop">
+                        <div class="events-box-caption">
+                            <div class="events-box-caption-content">
+                                <h4 class="project-category">
+                                    Applied Biology
+                                </h4>
+                                <h3 class="project-name">
+                                    THE ACCREDITATION WORKSHOP
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <!-- no href yet!-->
+                    <a class="events-box" href="#">
+                        <img class="img-fluid" src="static/images/departments/chemistry/events/event1.jpg" alt="Synthesis">
+                        <div class="events-box-caption">
+                            <div class="events-box-caption-content">
+                                <h4 class="project-category">
+                                    Chemistry
+                                </h4>
+                                <h3 class="project-name">
+                                    Synthesis and Cytotoxicity Evalution
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <!-- no href yet!-->
+                    <a class="events-box" href="#">
+                        <img class="img-fluid" src="static/images/departments/cs/events/dubaielectronicsecurityJPG.jpg"
+                            alt="DUBAI ELECTRONIC SECURITY CENTE WORKSHOP">
+                        <div class="events-box-caption">
+                            <div class="events-box-caption-content">
+                                <h4 class="project-category">
+                                    Computer Science
+                                </h4>
+                                <h3 class="project-name">
+                                    DUBAI ELECTRONIC SECURITY CENTE WORKSHOP
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Of Events -->
+
+
+
+    <!-- Start of Students-->
+
+    <section id="students" class="container">
+        <h2 class="text-center">Students</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <figure>
+                        <img class="student-picture" src="static/images/students/studentlife.jpg" alt="Lights" style="width:100">
+                    </figure>
+                    <h3>Campus Life</h3>
+                    <p>A thriving residential campus and community of creative and accomplished people from around
+                        the world</p>
+                    <a href="#">Students Affairs ></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <figure>
+                    <img class="student-picture" src="static/images/students/senior.jpg" alt="fitness" style="width:100">
+                </figure>
+                <h3>Senior Project</h3>
+                <p>Student in University Of Sharjah have shown the capability of their hard work by their senior
+                    projects.</p>
+                <a href="#">Go UOS ></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Students-->
+
+    <!-- Start Research -->
+
+    <section id="research">
+        <div class="container">
+            <h2 class="text-center">Research</h2>
+
+            <div class="row">
+                <div class="card" style="width: 23.5%;">
+                    <img class=" card-img-top" src="static/images/research/cs/mission4.JPG" alt="Card image cap" height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">OpenUAE Research</h5>
+                        <a href="#"> Research which covers: cyber security, smart cities, Internet of Things,
+                            astronomy,
+                            blockchains, </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:  23.5%;margin-left:1%;">
+                    <img class="card-img-top" src="static/images/research/cs/mission 2.JPG" alt="Card image cap" height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustainable Construction Materials </h5>
+                        <a href="#">research interests in the area of sustainable and novel construction materials
+                            and structural systems.</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:  23.5%;margin-left:1%;">
+                    <img class="card-img-top" src="static/images/research/cs/mission3.JPG" alt="Card image cap" height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">Information & Network Security Research Group</h5>
+                        <a href="#">identify threats, quantify risks, and take remediation measures to mitigate the
+                            effect of possible cyber attacks.</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 23.5%;margin-left:1%;">
+                    <img class="card-img-top" src="static/images/research/cs/mission5.png" alt="Card image cap" height="50%">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustainable Civil Infrastructure System</h5>
+                        <a href="#">Renewable energy, energy, efficiency, energy management, sustainability,
+                            energy-water nexus, </a>
+                    </div>
+                </div>
+            </div> <!-- end row-->
+        </div>
+    </section>
+
+    <!-- End Research-->
+
+    <!-- Start Contact -->
+    <section id="contact">
+        <div class="container">
+            <h3 class="text-center-small">Contact Us</h3>
+            <div class="row wow fadeInUp">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="contact-about">
+                        <h3>UOS</h3>
+                        <p>University of Sharjah will be more happy to reach out or help other people who are
+                            interested
+                            in pursuing knowledge, and by doing so this will allow us to grow and to be the
+                            university that we are aiming for.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="info">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p>M7, Man Building </p>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p>sciences@sharjah.ac.ae</p>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+97165050225 </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-8">
+                    <div class="form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                        data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                                    placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 copyright">
+                    <h6> University Of Sharjah &copy; 2018. Made With <i class="fa fa-heart"></i> By <span class="four-404">
+
+                            404 </span></h6>
                 </div>
             </div>
         </div>
-        <!-- start Events -->
+    </footer>
+    <!-- End Footer-->
 
-        <section id="portfolio">
-            <div class="container">
-                <h2 class="text-center">Events & Activities </h2>
-                <div class="row no-gutters popup-gallery">
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="#">
-                            <img class="img-fluid" src="static/images/departments/bio/events/AccreditationWorkshopJPG.jpg"
-                                alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Applied Biology
-                                    </div>
-                                    <div class="project-name">
-                                        THE ACCREDITATION WORKSHOP
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="#">
-                            <img class="img-fluid" src="static/images/departments/chemistry/events/event1.jpg" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Chemistry
-                                    </div>
-                                    <div class="project-name">
-                                        Synthesis and Cytotoxicity Evalution
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="#">
-                            <img class="img-fluid" src="static/images/departments/cs/events/dubaielectronicsecurityJPG.jpg"
-                                alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Computer Science
-                                    </div>
-                                    <div class="project-name">
-                                        DUBAI ELECTRONIC SECURITY CENTE WORKSHOP
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- End Of Events -->
-
-
-
-        <!-- Start of Students-->
-
-        <section id="students" class="container">
-            <h2 class="text-center">Students</h2>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                        <figure>
-                            <img class="student-picture" src="static/images/students/studentlife.jpg" alt="Lights"
-                                style="width:100">
-                        </figure>
-                        <h3>Campus Life</h3>
-                        <p>A thriving residential campus and community of creative and accomplished people from around
-                            the world</p>
-                        <a href="#">Students Affairs ></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <figure>
-                        <img class="student-picture" src="static/images/students/senior.jpg" alt="fitness" style="width:100">
-                    </figure>
-                    <h3>Senior Project</h3>
-                    <p>Student in University Of Sharjah have shown the capability of their hard work by their senior
-                        projects.</p>
-                    <a href="#">Go UOS ></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- End of Students-->
-
-        <!-- Start Research -->
-
-        <section id="research">
-            <div class="container">
-                <h2 class="text-center">Research</h2>
-
-                <div class="row">
-                    <div class="card" style="width: 23.5%;">
-                        <img class=" card-img-top" src="static/images/research/cs/mission4.JPG" alt="Card image cap"
-                            height="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">OpenUAE Research</h5>
-                            <a href="#"> Research which covers: cyber security, smart cities, Internet of Things,
-                                astronomy,
-                                blockchains, </a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width:  23.5%;margin-left:1%;">
-                        <img class="card-img-top" src="static/images/research/cs/mission 2.JPG" alt="Card image cap"
-                            height="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainable Construction Materials and Structural Systems</h5>
-                            <a href="#">research interests in the area of sustainable and novel construction materials
-                                and structural systems.</a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width:  23.5%;margin-left:1%;">
-                        <img class="card-img-top" src="static/images/research/cs/mission3.JPG" alt="Card image cap"
-                            height="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Information & Network Security Research Group</h5>
-                            <a href="#">identify threats, quantify risks, and take remediation measures to mitigate the
-                                effect of possible cyber attacks.</a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 23.5%;margin-left:1%;">
-                        <img class="card-img-top" src="static/images/research/cs/mission5.png" alt="Card image cap"
-                            height="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainable Civil Infrastructure System</h5>
-                            <a href="#">Renewable energy, energy, efficiency, energy management, sustainability,
-                                energy-water nexus, </a>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div>
-        </section>
-
-        <!-- End Research-->
-
-        <!-- Start Contact -->
-        <section id="contact">
-            <div class="container">
-                <h3 class="text-center-small">Contact Us</h3>
-                <div class="row wow fadeInUp">
-
-                    <div class="col-lg-4 col-md-4">
-                        <div class="contact-about">
-                            <h3>UOS</h3>
-                            <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam
-                                phasellus.
-                                Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc
-                                congue.</p>
-                            <div class="social-links">
-                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="info">
-                            <div>
-                                <i class="fa fa-map-marker"></i>
-                                <p>A108 Adam Street<br>New York, NY 535022</p>
-                            </div>
-
-                            <div>
-                                <i class="fa fa-envelope"></i>
-                                <p>info@example.com</p>
-                            </div>
-
-                            <div>
-                                <i class="fa fa-phone"></i>
-                                <p>+1 5589 55488 55s</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-md-8">
-                        <div class="form">
-                            <div id="sendmessage">Your message has been sent. Thank you!</div>
-                            <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
-                                <div class="form-row">
-                                    <div class="form-group col-lg-6">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                            data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                        data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <div class="validation"></div>
-                                </div>
-                                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- End Contact -->
-
-        <!-- Start Footer -->
-        <footer class="footer center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 copyright">
-                        <h6> University Of Sharjah &copy; 2018. Made With <i class="fa fa-heart"></i> By 404</h6>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- End Footer-->
-
-        <script src="static/js/jquery.min.js"></script>
-        <script src="static/js/bootstrap.min.js"></script>
-        <script src="static/js/main.js"></script>
-        <script src="static/js/contactform.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

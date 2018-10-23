@@ -8,19 +8,28 @@
     <meta name="desciption" content="this is the main page of computer science department" />
     <meta name="keywords" content="university of sharjah,college of science, computer science department in uos, mathematics department in uos,applied physics and astronomy department  in uos, applied biology  department in uos,chemistry department in uos  " />
     <meta name="author" content="404 team" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 
     <!-- we hate IE9 <3 -->
+    <!-- btw the following lines arent comments! they do work! -->
     <!--[if lt IE 9]>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 			<script src="js/https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js.js"></script>
-    <![endif]-->
+	<![endif]-->
 
+    <!-- Lol They dont have an icon in the official website ! shame !-->
     <link rel="icon" type="image/png" href="static/images/logo.png" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita" /> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- make sure that the bootstrap css file is the first one so it wont override your own codes !-->
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+
+    <!-- using font awsome's icons. check the official webstie !-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- will use it in the future <3 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
 </head>
 
 <body>
@@ -115,7 +124,7 @@
                         <div class="card-img-block">
                             <img class="img-fluid" src="static/images/departments/bio/bio.JPG" alt="applied biology department">
                         </div>
-                        <div class="card-body pt-5">
+                        <div class="card-body pt-5 changecolor">
                             <img src="static/images/departments/bio/dean.JPG" alt="profile-image" class="profile" />
                             <h5 class="card-title">Applied Biology</h5>
                             <p class="card-text">The College of Sciences in collaboration with the University of
@@ -132,7 +141,7 @@
                         <div class="card-img-block">
                             <img class="img-fluid" src="static/images/departments/physics/physics.JPG" alt="Card image cap">
                         </div>
-                        <div class="card-body pt-5">
+                        <div class="card-body pt-5 changecolor">
                             <img src="static/images/departments/physics/chair.jpg" alt="profile-image" class="profile" />
                             <h5 class="card-title">Applied Physics & Astronomy</h5>
                             <p class="card-text">It is with great pleasure we welcome you to the Department of Applied
@@ -148,11 +157,11 @@
                         <div class="card-img-block">
                             <img class="img-fluid" src="static/images/departments/chemistry/chemistry.JPG" alt="Card image cap">
                         </div>
-                        <div class="card-body pt-5">
+                        <div class="card-body pt-5 changecolor">
                             <img src="static/images/departments/chemistry/chair.jpg" alt="profile-image" class="profile" />
                             <h5 class="card-title">Chemistry</h5>
                             <p class="card-text">Chemistry is the “Principle Science’ where mathematics meets the
-                                applications of the natural and physical sciences to solve real life problems.</p>
+                                applications of the natural and physical sciences to solve problems.</p>
                             <a class="btn btn-success" href="#" role="button">Read More... </a>
                         </div>
                     </div>
@@ -163,7 +172,7 @@
                         <div class="card-img-block">
                             <img class="img-fluid" src="static/images/departments/cs/cs.JPG" alt="Card image cap">
                         </div>
-                        <div class="card-body pt-5">
+                        <div class="card-body pt-5 changecolor">
                             <img src="static/images/departments/cs/chair.jpg" alt="profile-image" class="profile" />
                             <h5 class="card-title">Computer Science</h5>
                             <p class="card-text">The Department of Computer Science was founded in 1997 and now it
@@ -180,17 +189,16 @@
                         <div class="card-img-block">
                             <img class="img-fluid" src="static/images/departments/mathematics/mathematics.JPG" alt="Card image cap">
                         </div>
-                        <div class="card-body pt-5">
+                        <div class="card-body pt-5 changecolor">
                             <img src="static/images/departments/mathematics/chair.jpg" alt="profile-image" class="profile" />
                             <h5 class="card-title">Mathematics</h5>
                             <p class="card-text">Mathematics is a piece of art composed of and tailored from axioms
                                 through
                                 well-defined rules and theory.</p>
-                            <a class="btn btn-success" href="#">Read More... </a>
+                            <a class="btn btn-success " href="#">Read More... </a>
                         </div>
                     </div>
                 </div>
-
 
 
             </div>
@@ -199,11 +207,13 @@
     <!-- End Department Section -->
 
     <!-- Start Footer -->
-    <footer class="footer center">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xs-12 copyright">
-                    <h6> University Of Sharjah &copy; 2018. Made With <i class="fa fa-heart"></i> By 404</h6>
+                    <h6> University Of Sharjah &copy; 2018. Made With <i class="fa fa-heart"></i> By <span class="four-404">
+
+                            404 </span></h6>
                 </div>
             </div>
         </div>
