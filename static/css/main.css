@@ -11,6 +11,9 @@ h3 {
   font-weight: 700;
   line-height: 1.25em;
 }
+p {
+  line-height: 2em;
+}
 /* My own framework */
 .text-center {
   text-align: center;
@@ -464,26 +467,19 @@ h6 {
 
 .advanced-feature-img-right {
   max-width: 50%;
-  max-height: 70%;
+  max-height: 50%;
   float: right;
   padding: 0 0 30px 30px;
 }
-#advanced-features h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-style: italic;
-  color: #999;
-}
+
 #advanced-features h2 {
   font-size: 26px;
   font-weight: 700;
   color: #000;
 }
 .features-holding-bottom {
-  margin-bottom: -20%;
+  margin-bottom: -29%;
 }
-
 /* */
 
 /*--------------------------------------------------------------
