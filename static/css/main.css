@@ -1,8 +1,10 @@
+/* Gloabal Layout */
 html,
 body {
   position: relative;
   margin: 0px;
   font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #f1ecec;
 }
 h1,
 h3 {
@@ -10,9 +12,6 @@ h3 {
   line-height: 1.25em;
 }
 /* My own framework */
-.green-color {
-  color: #4cff75;
-}
 .text-center {
   text-align: center;
   margin-bottom: 5% !important;
@@ -22,15 +21,22 @@ h3 {
   line-height: 1.25em;
 }
 
+.text-center-small {
+  text-align: center;
+  margin-bottom: 5% !important;
+  font-weight: 900;
+  line-height: 0.5em;
+}
 /* end of my framework */
 
 /* override bootstrap css classes */
+
+.breadcrumb {
+  background-color: lightgray !important;
+}
 .bg-success {
   color: #fff;
   background-color: #b1040e !important;
-  /* position: fixed;
-  width: 100%;
-  z-index: 100; */
 }
 .btn-success,
 .btn-success:hover,
@@ -41,6 +47,11 @@ h3 {
   background-color: #b1040e !important;
   border-color: #b1040e !important;
   background-image: none;
+}
+
+a,
+a:hover {
+  color: white;
 }
 /* end of override bootstrap*/
 
@@ -57,6 +68,7 @@ h3 {
 }
 
 /* end nav */
+/* Index Background */
 .header-picture {
   height: 30em;
   width: auto;
@@ -68,6 +80,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 /* start department */
 #department {
   background: #f1ecec !important;
@@ -84,6 +97,9 @@ h3 {
 }
 .profile-card-2 .card-body {
   position: relative;
+}
+.profile-card-2 .card-body a {
+  color: white;
 }
 .profile-card-2 .profile {
   border-radius: 50%;
@@ -104,12 +120,11 @@ h3 {
   font-size: 15px;
   overflow: hidden;
 }
-/* */
+/* end Department*/
 
 /* start events */
 
 #portfolio {
-  background-color: #dde0de;
   padding-bottom: 60px !important ;
 }
 
@@ -207,29 +222,35 @@ figure .student-picture {
 #students p {
   padding-top: 7px;
 }
+#students a {
+  color: #b1040e !important;
+}
 /* End students*/
 
 /* start Research */
 #research {
-  background-color: aqua;
   width: 100%;
+  margin-bottom: 18px;
 }
-.card-body h5 {
+#research .card-body h5 {
   color: #b1040e;
 }
-.card-body a {
+#research .card-body a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
-.card-body a:hover {
-  color: blue;
+#research .card-body a:hover {
+  color: royalblue;
 }
 /* End Research*/
 
 /* Events Section
 --------------------------------*/
-/* @media (max-width: 991px) {
+#blog {
+  padding-bottom: 5%;
+}
+@media (max-width: 991px) {
   #blog .block-blog {
     margin-bottom: 30px;
   }
@@ -283,11 +304,12 @@ figure .student-picture {
 
 #blog .block-blog .content-blog a.readmore:hover {
   color: #71c55d;
-} */
+}
 #contact {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
   overflow: hidden;
+  margin-bottom: 4px;
 }
 
 #contact .contact-about h3 {
@@ -417,3 +439,215 @@ h6 {
 }
 
 /* end footer */
+/* Computer Science Department Page Starts Here!*/
+/* ==============================================*/
+/* ==============================================*/
+/* ==============================================*/
+/* ==============================================*/
+#department-cs-background {
+  height: 25em;
+  width: auto;
+  background-image: url("../images/departments/cs/cs.JPG");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* */
+.features-row {
+  padding: 60px 0 30px 0;
+  margin-bottom: -20%;
+}
+
+.advanced-feature-img-right {
+  max-width: 50%;
+  max-height: 70%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+#advanced-features h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+#advanced-features h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+.features-holding-bottom {
+  margin-bottom: -20%;
+}
+
+/* */
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+  .padd-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+.section-title h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.section-title .separator {
+  margin: 0;
+}
+
+.separator {
+  color: #626262;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+/* Get Started Section
+--------------------------------*/
+#get-started {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+#get-started .feature-block {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px 20px;
+  transition: all 0.5s ease-in-out 0.9s;
+}
+
+@media (max-width: 991px) {
+  #get-started .feature-block {
+    margin-bottom: 30px;
+  }
+}
+
+#get-started .feature-block:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#get-started .feature-block h4 {
+  margin-bottom: 20px;
+}
+
+#get-started .feature-block p {
+  margin-bottom: 20px;
+}
+
+#get-started .feature-block a {
+  color: #505050;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+#get-started .feature-block a:hover {
+  color: #71c55d;
+}
+/* cs contact us  */
+
+.text-center p a {
+  color: #b1040e;
+}
+hr {
+  max-width: 14%;
+  border-width: 3px;
+  border-color: #b1040e;
+}
+/* Our People */
+/* 
+--------------------------------*/
+#team .team-block {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  height: 254px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  #team .team-block {
+    margin-bottom: 30px;
+  }
+}
+
+#team .team-block img {
+  width: 100%;
+}
+
+#team .team-block .team-content {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+  bottom: -147px;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#team .team-block .team-content ul {
+  display: block;
+  width: 100%;
+}
+
+#team .team-block .team-content ul li {
+  display: inline-block;
+}
+
+#team .team-block .team-content ul li a {
+  color: #626262;
+}
+
+#team .team-block .team-content ul li a .fa {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+}
+
+#team .team-block .team-content ul li a .fa:hover {
+  color: #71c55d;
+}
+
+#team .team-block .team-content ul > span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#team .team-block:hover .team-content {
+  bottom: 0px;
+  transition: all 0.5s ease-in-out 0s;
+}
