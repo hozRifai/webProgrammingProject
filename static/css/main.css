@@ -100,6 +100,18 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.elearning-picture {
+  height: 30em;
+  width: auto;
+  background-image: url("../images/elearning/elearning.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 /*--------------------------------------------------------------
 #               Deab Welcome
 --------------------------------------------------------------*/
@@ -443,7 +455,7 @@ h6 {
 .four-404 {
   color: #b1040e;
 }
-/* Index Page Ends Here!*/
+/* Index Page Ends Here! */
 /* ==============================================*/
 /* ==============================================*/
 /* ==============================================*/
@@ -674,4 +686,27 @@ hr {
 #team .team-block:hover .team-content {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
+}
+/* 
+#           Start E-Learning Page
+*/
+
+.abha  h1 {
+	text-align: left;
+	color: white;
+	padding-left: 40px;
+    padding-top:90px;
+
+}
+.abha p {
+	color :white;
+    font-size: 18px; 
+    padding-top:20px;
+    padding-left:40px;
+
+}
+.abha a {
+	margin-left:15px; 
+	width:100px;
+
 }
