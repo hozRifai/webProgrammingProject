@@ -20,6 +20,20 @@ a:hover {
   color: #b1040e !important;
   text-decoration: none;
 }
+/* menu */
+.dropdown-menu{
+  background-color: #b1040e;
+}
+
+.dropdown-item{
+  color:white;
+}
+.dropdown-menu > a:hover {
+    color:blue !important;
+    background: #b1040e;
+    font-size: 23px;
+}
+/* end menu */
 /*--------------------------------------------------------------
 #                   My Own Framework
 #                 any css can be used in the whole website
@@ -67,8 +81,8 @@ a,
 a:hover {
   color: white;
 }
-
 /*--------------------------------------------------------------
+#               Index Page
 #               Nav Welcome
 --------------------------------------------------------------*/
 .navbar a:hover {
@@ -86,6 +100,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+#               Index Page
 #               Image Background
 --------------------------------------------------------------*/
 .header-picture {
@@ -113,6 +128,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+#               Index Page
 #               Deab Welcome
 --------------------------------------------------------------*/
 .dean {
@@ -129,7 +145,8 @@ a:hover {
   color: #000;
 }
 /*--------------------------------------------------------------
-#                   Departments
+#               Index Page
+#               Departments
 --------------------------------------------------------------*/
 
 #departments {
@@ -236,29 +253,17 @@ a:hover {
 /*--------------------------------------------------------------
 #               Department (departments.html)
 --------------------------------------------------------------*/
-#department {
-  background: #f1ecec !important;
-}
-
-.profile-card-2 {
-  margin-bottom: 4%;
-}
+#department {background: #f1ecec !important;}
+.profile-card-2 {margin-bottom: 4%;}
 .profile-card-2 .card-img-block {
   float: left;
   width: 100%;
   min-height: 100px;
   overflow: hidden;
 }
-.profile-card-2 .card-body {
-  position: relative;
-}
-.profile-card-2 .card-body a,
-a:hover {
-  color: white;
-}
-.changecolor a:hover {
-  color: white !important;
-}
+.profile-card-2 .card-body {position: relative;}
+.profile-card-2 .card-body a,a:hover {color: white;}
+.changecolor a:hover {color: white !important;}
 .profile-card-2 .profile {
   border-radius: 50%;
   position: absolute;
@@ -280,7 +285,8 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-#                   Students
+#               Index Page
+#               Students
 --------------------------------------------------------------*/
 figure .student-picture {
   max-height: 17em !important;
@@ -297,7 +303,8 @@ figure .student-picture {
 }
 
 /*--------------------------------------------------------------
-#                   Research
+#               Index Page
+#               Research
 --------------------------------------------------------------*/
 #research {
   width: 100%;
@@ -315,7 +322,8 @@ figure .student-picture {
   color: royalblue;
 }
 /*--------------------------------------------------------------
-#                   Contact us 
+#               Index Page
+#               Contact us 
 --------------------------------------------------------------*/
 
 #contact {
@@ -438,7 +446,8 @@ figure .student-picture {
   cursor: pointer;
 }
 /*--------------------------------------------------------------
-#                   Footer
+#               Index Page
+#               Footer
 --------------------------------------------------------------*/
 footer {
   background-color: #eee;
@@ -456,12 +465,12 @@ h6 {
   color: #b1040e;
 }
 /* Index Page Ends Here! */
-/* ==============================================*/
-/* ==============================================*/
-/* ==============================================*/
-/* ==============================================*/
+
+/* 
+/* Computer Science Department Page Starts Here!*/ 
 
 /*--------------------------------------------------------------
+#                   CS Section
 #                   Events Section
 --------------------------------------------------------------*/
 #department-event {
@@ -518,11 +527,7 @@ h6 {
   color: #71c55d;
 }
 
-/* Computer Science Department Page Starts Here!*/
-/* ==============================================*/
-/* ==============================================*/
-/* ==============================================*/
-/* ==============================================*/
+/* BACKGROUND */
 #department-cs-background {
   height: 25em;
   width: auto;
@@ -571,8 +576,9 @@ h6 {
   margin-bottom: 30px;
   text-transform: capitalize;
 }
-/* Get Started Section
---------------------------------*/
+/*--------------------------------------------------------------
+#                   Get Started Section
+--------------------------------------------------------------*/
 #get-started {
   display: inline-block;
   height: 100%;
@@ -687,26 +693,55 @@ hr {
   bottom: 0px;
   transition: all 0.5s ease-in-out 0s;
 }
-/* 
-#           Start E-Learning Page
-*/
-
-.abha  h1 {
+/*--------------------------------------------------------------
+#               elearning Page
+#               Nav Welcome
+--------------------------------------------------------------*/
+.elearning-text h1 {
 	text-align: left;
 	color: white;
 	padding-left: 40px;
     padding-top:90px;
 
 }
-.abha p {
-	color :white;
-    font-size: 18px; 
+
+.elearning-text h5 {
+    color:white;
     padding-top:20px;
     padding-left:40px;
-
 }
-.abha a {
-	margin-left:15px; 
-	width:100px;
+/*--------------------------------------------------------------
+#               elearning Page
+#               login Page
+--------------------------------------------------------------*/
+.login-page h1 {
+    color:#c0c0c0;
+  }
 
+  .login-page h1 span {cursor:pointer;}
+  .login-page form {
+    max-width:380px;
+    margin:auto;
+  }
+  .login-page .signup {display:none; }
+  .login-page [data-class="login"].selected{
+    color: #b1040e;
+  }
+  .login-page [data-class="signup"].selected{
+    color:#b1040e;
+  }
+  .login-page [data-class="switch"] {
+    color: #ff4b4b ;
+  }
+  .login-page form input {margin-bottom:10px;}
+  .login-page .selected {color: #b22020;}
+  .login-page .signup {display: none;}
+  .login-page form , .the_errors {
+    max-width:380px;
+    margin:auto;
+  }
+.center-h1-login {
+  text-align: center;
+  color: #d63d1a !important;
+  padding-top:20px;
 }

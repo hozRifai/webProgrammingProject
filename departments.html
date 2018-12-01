@@ -34,7 +34,7 @@
 
 <body>
     <!-- start navbar -->
-    <header>
+     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-success box-shadow">
             <a class="navbar-brand" href="index.html">
                 <span>UOS</span> College Of Science </a>
@@ -43,14 +43,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="houzayfa">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
-                </ul>
-            </div>
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="departments.html">Departments</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="elearning.html" id="navbardrop" data-toggle="dropdown" >
+                E-Learning
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="elearning.html">Our Courses</a>
+                <a class="dropdown-item" href="login.html">Dashboard</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link" href="#">Students</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+          </ul>
+        </div>
         </nav>
     </header>
     <!-- end navbar -->
