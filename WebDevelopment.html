@@ -55,35 +55,11 @@
     <section class="container breadcrumb-main">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Dashbord</a></li>
-            <li class="breadcrumb-item">Courses</li><!-- <a href="#">Courses</a></li> -->
-            <!-- <li class="breadcrumb-item" >Web Development</li> -->
+            <li class="breadcrumb-item"><a href="dashboard.html">Dashbord</a></li>
+            <li class="breadcrumb-item"><a href="#">Courses</a></li>
+            <li class="breadcrumb-item" >Web Development</li>
           </ol>
         </nav>
-    </section>
-    <!-- end breadcrumb-->
-    <section id="your-courses">
-      <div class="container">
-        <h2 class="" >Feature Courses</h2>
-
-        <table class="table table-bordered" >
-            
-            <thead>
-                <th scope="col" id="number"> </th>
-                <th scope="col" id="college"></th>
-                <th scope="col" id="course_name"></th>
-                <th scope="col" id="course_number"></th>
-                <th scope="col" id="instructor"></th>
-                <th scope="col" id="start"></th>
-                <th scope="col" id="end"></th>
-                <th scope="col" id="status"></th>
-            </thead>
-
-            <tbody id="tbodyTable">                
-            </tbody>
-
-        </table>
-        </div>
     </section>
 
    <!-- Start Footer -->
@@ -102,8 +78,6 @@
 
     <!-- End Footer-->
 
-
-
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/main.js"></script>
@@ -120,62 +94,8 @@
             redirect();
         }else {
             document.getElementById("userName").innerHTML  = username; 
+            console.log(username);
         }
-
-
-
-        // loading the titles of the table when the page loads
-        var tableTitle = ["Number", "College", "Course Name", "Course Number", "Instructor", "Start Date", "End Date", "Status"] ; 
-        document.getElementById("number").innerHTML = tableTitle[0];
-        document.getElementById("college").innerHTML = tableTitle[1];
-        document.getElementById("course_name").innerHTML = tableTitle[2];
-        document.getElementById("course_number").innerHTML = tableTitle[3];
-        document.getElementById("instructor").innerHTML = tableTitle[4];
-        document.getElementById("start").innerHTML = tableTitle[5];
-        document.getElementById("end").innerHTML = tableTitle[6];
-        document.getElementById("status").innerHTML = tableTitle[7];  
-
-        // start inserting the courses 
-        insertCourse("Computer Science", "Web Development", "104", "Dr. Manar", "11/01/2019", "11/04/2019", "Enrol Now");
-        insertCourse("Computer Science", "Information Security", "130", "Djedjiga Mouheb", "04/01/2019", "04/04/2019", "Enrol Now");
-        insertCourse("Chemistry", "General Chemistry", "101", "Mohamed El-Naggar", "07/01/2019", "07/04/2019", "Enrol Now");
-        insertCourse("Mathematics", "Calculus I", "131", "Imad Shadid", "10/01/2019", "10/04/2019", "Enrol Now");
-        insertCourse("Physics", "Physics I for sciences", "124", "Mounir Kaidi", "13/01/2019", "13/04/2019", "Enrol Now");
-        insertCourse("Biotechnology", "General Biology 1", "110", " Ihsan Ali Mahasneh", "05/01/2019", "05/04/2019", "Enrol Now");
-    }
-</script>
-<script>
-    // a function to add a course to the table
-    // written by houzayfa rifai 3/12/2018
-        function insertCourse( college, course_name, course_number, instructor, start, end, status ) {
-        var tbody = document.getElementById("tbodyTable") ; 
-        var trNumber = tbody.childElementCount; // 7 
-        var tr = document.createElement('tr');
-        var th = document.createElement("th") ;
-        th.setAttribute("scope", "row"  );
-        th.innerHTML = trNumber + 1 ;
-        tr.appendChild(th);
-        // create 7 td
-        for(var i = 0 ; i < 7 ; i++ ) {
-            var td = document.createElement("td");
-            if(i === 0 )
-                td.innerHTML = college ;
-            else if ( i === 1 )
-                td.innerHTML = course_name ;
-            else if ( i === 2 ) 
-                td.innerHTML = course_number;
-            else if ( i === 3 )
-                td.innerHTML = instructor;
-            else if ( i === 4 )
-                td.innerHTML = start ; 
-            else if ( i === 5 )
-                td.innerHTML = end;
-            else if ( i === 6 )
-                td.innerHTML = `<a href="${course_name.replace(" ", "") }.html" style="color:#b1040e !important;">${status}</a>` ; 
-            tr.appendChild(td);
-        }
-        // add the new tr to the table 
-        tbody.appendChild(tr);
     }
 </script>
 <script>
@@ -184,7 +104,7 @@
     function redirect() {
         setTimeout(function(){  
                 var currentPage = window.location.href; 
-                var login   = currentPage.replace("dashboard.html", "login.html"); 
+                var login   = currentPage.replace("WebDevelopment.html", "login.html"); 
             window.location.href = login ;
             } ,4000 );
     }

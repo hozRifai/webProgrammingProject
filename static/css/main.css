@@ -745,3 +745,25 @@ hr {
   color: #d63d1a !important;
   padding-top:20px;
 }
+/*--------------------------------------------------------------
+#               Dashboard Page
+#               Cover Picture
+--------------------------------------------------------------*/
+.dahsboard-picture {
+  height: 18em;
+  width: auto;
+  background-image: url("../images/elearning/javascript.gif");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumb-main {
+  margin-top:25px;
+}
+.breadcrumb a {
+  color:#b1040e;
+}
