@@ -767,3 +767,15 @@ hr {
 .breadcrumb a {
   color:#b1040e;
 }
+
+/*--------------------------------------------------------------
+#               Courses Page
+#               Courses Cards
+--------------------------------------------------------------*/
+
+.card-block a {
+  color:white !important;
+}
+.card-block a:hover{
+  color: white !important;
+}

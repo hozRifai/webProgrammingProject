@@ -56,7 +56,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Dashbord</a></li>
-            <li class="breadcrumb-item">Courses</li><!-- <a href="#">Courses</a></li> -->
+            <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
             <!-- <li class="breadcrumb-item" >Web Development</li> -->
           </ol>
         </nav>
@@ -148,6 +148,10 @@
     // a function to add a course to the table
     // written by houzayfa rifai 3/12/2018
         function insertCourse( college, course_name, course_number, instructor, start, end, status ) {
+        // these 2 variables are meant to clear the spaces from pyhiscs 1 for science and general bio 1
+        // and then i am using clear_course_name2 in the href
+        var clear_course_name1 = course_name.replace(" ", ""); 
+        var clear_course_name2 = clear_course_name1.replace(" ", "");  
         var tbody = document.getElementById("tbodyTable") ; 
         var trNumber = tbody.childElementCount; // 7 
         var tr = document.createElement('tr');
@@ -171,7 +175,7 @@
             else if ( i === 5 )
                 td.innerHTML = end;
             else if ( i === 6 )
-                td.innerHTML = `<a href="${course_name.replace(" ", "") }.html" style="color:#b1040e !important;">${status}</a>` ; 
+                td.innerHTML = `<a href="${clear_course_name2.replace(" ", "")}.html" style="color:#b1040e !important;">${status}</a>` ; 
             tr.appendChild(td);
         }
         // add the new tr to the table 
@@ -185,8 +189,8 @@
         setTimeout(function(){  
                 var currentPage = window.location.href; 
                 var login   = currentPage.replace("dashboard.html", "login.html"); 
-            window.location.href = login ;
-            } ,4000 );
+                window.location.href = login ;
+            }, 4000 );
     }
 </script>
 <script>
