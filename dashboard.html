@@ -29,7 +29,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 
     <link rel="stylesheet" type="text/css" href="static/css/main.css" />
-
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          var date = today.toDateString();
+          document.getElementById("clock").innerHTML = "date: " + date + "   time: " +
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -49,6 +66,7 @@
         </div>
         </nav>
     </header>
+    
     <section class="dahsboard-picture"></section>
 
     <!-- start breadcrumb-->
@@ -65,8 +83,8 @@
     <section id="your-courses">
       <div class="container">
         <h2 class="" >Feature Courses</h2>
-
-        <table class="table table-bordered" >
+        <div id="txt"></div>
+        <table class="table table-bordered" >       
             
             <thead>
                 <th scope="col" id="number"> </th>
@@ -86,6 +104,26 @@
         </div>
     </section>
 
+    <section id="voting-system">
+        <div class="container">
+            <h3>Vote to your best doctor ~_~</h3>
+            <form> 
+            <label class="content" > DR. Manar</label><input type="radio" name="vote" value="DR. Manar"/>
+            <label class="content" > DR. Ahmad</label><input type="radio" name="vote" value="DR. Ahmad"/>
+            <label class="content" > DR. Ashraf</label><input type="radio" name="vote" value="DR. Ashraf"/>
+            <label class="content" > DR. Nasr</label><input type="radio" name="vote" value="DR. Nasr"/>
+            <!-- notice that i am using input type="button" and not just button cause i dont want the page to be reload -->
+            <input type="button" name="submitvalue" value="vote now" onclick="poll()" />
+            </form>
+            <h5>Check Results</h5>
+            <p id="dr_manar"></p>
+            <p id="dr_ahmad"></p>
+            <p id="dr_ashraf"></p>
+            <p id="dr_nasr"></p>
+            <p id="total_voters"></p>
+        </div>
+    </section>
+
    <!-- Start Footer -->
     <footer class="footer">
         <div class="container">
@@ -94,6 +132,7 @@
                     <h6> University Of Sharjah &copy; 2018. Made With <i class="fa fa-heart"></i> By <span class="four-404">
                        404 
                    </span>
+                   <span id="clock"></span>
                </h6>
                 </div>
             </div>
@@ -109,6 +148,8 @@
 <script src="static/js/main.js"></script>
 <script>
     window.onload =  function() {
+        // display the time in the web page 
+
 
         // localstorage ? let him in and diplay the username : redirect him ;
 
@@ -142,7 +183,48 @@
         insertCourse("Mathematics", "Calculus I", "131", "Imad Shadid", "10/01/2019", "10/04/2019", "Enrol Now");
         insertCourse("Physics", "Physics I for sciences", "124", "Mounir Kaidi", "13/01/2019", "13/04/2019", "Enrol Now");
         insertCourse("Biotechnology", "General Biology 1", "110", " Ihsan Ali Mahasneh", "05/01/2019", "05/04/2019", "Enrol Now");
+
+
+        startTime();
     }
+</script>
+<script>
+    // working as a global variables so it wont start from zero every time we click the botton
+    var dr_manar = 0 ; 
+    var dr_ashraf = 0 ; 
+    var dr_nasr = 0 ; 
+    var dr_ahmad = 0 ;
+    var number_of_voters = 0 ; 
+
+    function poll() {
+
+        // initializing all the values with zeros
+        // variables go here!
+        var value = document.querySelector('input[name="vote"]:checked').value;
+
+        // check the value of the passed argument!
+        if (value == "DR. Manar"){
+            number_of_voters +=1 ;
+            dr_manar +=1 ; 
+        }
+        else if( value == "DR. Ahmad"){
+            dr_ahmad += 1 ;
+            number_of_voters +=1 ;
+        }
+        else if ( value == "DR. Ashraf"){
+            dr_ashraf += 1 ;
+            number_of_voters +=1 ;
+        }
+        else if ( value == "DR. Nasr"){
+            number_of_voters +=1 ;
+            dr_nasr +=1 ; 
+        }
+        document.getElementById("dr_manar").innerHTML = "Dr. Manar: " + dr_manar;
+        document.getElementById("dr_ashraf").innerHTML = "DR. Ashraf: " +  dr_ashraf;
+        document.getElementById("dr_ahmad").innerHTML = "DR. Ahmad: " + dr_ahmad;
+        document.getElementById("dr_nasr").innerHTML = "DR. Nasr: " + dr_nasr;
+        document.getElementById("total_voters").innerHTML = "tatal voters: " + number_of_voters;
+    }  
 </script>
 <script>
     // a function to add a course to the table

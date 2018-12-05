@@ -779,3 +779,10 @@ hr {
 .card-block a:hover{
   color: white !important;
 }
+
+
+/*  clock edit   */
+#clock{
+  margin-left:40%;
+}
+
