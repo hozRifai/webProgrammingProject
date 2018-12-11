@@ -780,9 +780,49 @@ hr {
   color: white !important;
 }
 
-
-/*  clock edit   */
+/*--------------------------------------------------------------
+#               Dashboard Page
+#               Clock Div
+--------------------------------------------------------------*/
 #clock{
   margin-left:40%;
 }
+/*--------------------------------------------------------------
+#               Student Page
+#               Cover Pic
+--------------------------------------------------------------*/
+.students-picture {
+  height: 30em;
+  width: auto;
+  background-image: url("../images/students/cover.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
+.list1{
+  float: left;
+  max-width: 450px !important;
+  padding-left: 10%;
+  padding-top: 7%;
+  padding-bottom: 4%;
+}
+.list1 a {
+  color: black !important;
+}
+.list1 a:hover{
+  color:#b1040e !important;
+}
+.club-text {
+  float: right;
+  max-width: 600px;
+  margin-right: 60%;
+  padding-top: 7%;
+  padding-bottom: 4%;
+}
+.footer{
+  clear: both;
+}
